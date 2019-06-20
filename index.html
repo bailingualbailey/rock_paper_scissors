@@ -5,20 +5,46 @@
 </head>
 
 <header>
-
+    <center><h1>GREAT GAME, REFRESH PAGE TO PLAY AGAIN. :)</h1></center>
 </header>
 <body>
 
     <script>
-      function computerplay () {
+
+    function computerplay () {
         var plays = ["rock", "paper", "scissors"];
         return plays[Math.floor(Math.random() * ((plays.length -1) - 0 + 1))];
-          
-      }  
+        alert(computerplay());
+    }  
 
       computerplay()
+
+    var computerTurn = computerplay()
+    var playerTurn = prompt('Rock, paper, or scissors?');
+
+    if (computerTurn === 'rock' && playerTurn === 'paper') {
+        alert('Computer chose: ' + computerTurn + '!')
+        alert('Paper beats rock! YOU WIN!')
+    }
+
+    if (computerTurn === 'scissors' && playerTurn === 'paper') {
+        alert('Computer chose: ' + computerTurn + '!')
+        alert('Sorry, scissors beats paper! YOU LOSE')
+    }
+
+    if (computerTurn === 'paper' && playerTurn === 'paper') {
+        alert('Computer chose: ' + computerTurn + '!')
+        alert('Great minds think alike, TRY AGAIN')
+    }
+
+    
+        
+
+
       
-      alert(computerplay());
+      
+
+
     </script>
 </body>
 </html>
