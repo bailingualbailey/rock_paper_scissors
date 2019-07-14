@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.rock{
+    border-width: 1px;
+    border-block-color: grey;
+    border-radius: 5px;
+}
+
+.paper {
+    border-width: 1px;
+    border-block-color: grey;
+    border-radius: 5px;
+}
+
+.scissors {
+    border-width: 1px;
+    border-block-color: grey;
+    border-radius: 5px;
+}
+
+.container {
+    border-block-color: grey;
+    border-width: 5px;
+    position: relative;
+    text-align: center;
+}

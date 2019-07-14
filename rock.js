@@ -1,6 +1,3 @@
-
-
-
 function computerPlay () {
     let plays = ["rock", "paper", "scissors"];
     return plays[Math.floor(Math.random() * ((plays.length -1) - 0 + 1))];
