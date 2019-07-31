@@ -2,18 +2,40 @@
 <html>
 <head>
 <title>Rock Paper Scissors</title>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css"  
 </head>
 
 <header>
-    <center><h1>GREAT GAME, REFRESH PAGE TO PLAY AGAIN. :)</h1></center>
+    <center>
+        <h1>Rock, Paper, Scissors</h1>
+        <h2>GREAT GAME! REFRESH PAGE TO PLAY AGAIN. </h2>
+        <break>
+        <div>
+            <input id= "btn" class="bttn" type="button" value="PLAY!" onclick="computerPlay();"/>
+        </div>
+        </break>
+    </center>
 </header>
 <body class="body">
+<div class="wrapper">   
     <div class="container">
         <img class="rock" type="image/png" src="image/rock.png">
-        <img class="paper" type="image/png" src="image/paper.png">
-        <img class="scissors" type="image/png" src="image/scissors.png">
+        <div class="rock-description-lyr">
+            <div class="rock-description">Rock</div>
     </div>
-    <script src="rock.js"></script>
+    <div class="container1">
+        <img class="paper" type="image/png" src="image/paper.png">ß
+        <div class="paper-description-lyr">
+            <div class="paper-description">Paper</div>
+        </div>
+    </div>
+    <div class="container2">     
+        <img class="scissors" type="image/png" src="image/scissors.png">
+        <div class="scissors-description-lyr">
+            <div class="scissors-description">Scissors</div>
+        </div>
+    </div>
+</div>
+<script src="rock.js"></script>
 </body>
 </html>

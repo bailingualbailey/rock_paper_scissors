@@ -3,30 +3,100 @@ body {
 }
 
 h1 {
+    background-color:black;
     color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+h2 {
+    background-color:black;
+    color: whitesmoke;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bttn {
+    padding-bottom: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.div {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.wrapper {
+    background-color:black;
+    text-align: center;
+    position: relative;
+    top: 10;
+    left:0;
+    display: inline;
+}
+
+.container {
+    position: absolute;
+    width:200px;
+    display: inline-block;
+    left:0px;
+    top: 0;
+}
+
+.container1 {
+    position: absolute;
+    width:200px;
+    top: 0;
+    left: 310px;
+    display: inline-block;
+}
+
+.container2 {
+    position: absolute;
+    width: 200px;
+    left: 620px;
+    top: 0;
+    display: inline-block;
+}
 .rock{
     border-width: 1px;
-    border-block-color: grey;
-    border-radius: 5px;
+    border-color: grey;
+    border-radius: 150px;
+    opacity: .50;
 }
 
 .paper {
     border-width: 1px;
-    border-block-color: grey;
-    border-radius: 5px;
+    border-color: grey;
+    border-radius: 150px;
+    opacity: .70;
+    
 }
 
 .scissors {
     border-width: 1px;
-    border-block-color: grey;
-    border-radius: 5px;
+    border-color: grey;
+    border-radius: 150px; 
+    opacity: .90;
 }
 
-.container {
-    border-block-color: grey;
-    border-width: 5px;
+.rock-description-lyr {
     position: relative;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.container:hover .rock-description-lyr {
+    opacity: .10;
+}
+
+.rock-description {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
